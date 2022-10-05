@@ -74,6 +74,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: "G-32FWDB6CYG",
+          cookieName: "gatsby-gdpr-google-analytics",
+          anonymize: true,
+          allowAdFeatures: false,
+        },
+        environments: ["production", "development"],
+      },
+    },
+    {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
